@@ -9,6 +9,7 @@ const addBlog = (product) => {
                 "Content-Type": "application/json",
             },
         });
+        // const result = await res.json();
         const result = await res.json();
         if (result.acknowledged) {
             dispatch(
