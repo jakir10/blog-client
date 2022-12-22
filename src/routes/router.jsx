@@ -1,8 +1,8 @@
 import SIngleBlogCard from "../component/SingleBlogCard";
 import Dashboard from "../layout/dashboard/Dashboard";
 import AddBlog from "../pages/dashboard/AddBlog";
-import EditBlog from "../pages/dashboard/EditBlog";
 import Allblog from "../pages/dashboard/AllBlog";
+import EditBlog from "../pages/dashboard/EditBlog";
 import About from "../pages/main/About";
 
 const { createBrowserRouter } = require("react-router-dom");

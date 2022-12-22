@@ -1,10 +1,10 @@
 import { addNewBlog } from "../action/blogAction";
 
-const addBlog = (product) => {
+const addBlog = (blog) => {
     return async (dispatch, getState) => {
-        const res = await fetch("https://blog-server-liard.vercel.app/blog", {
+        const res = await fetch("http://localhost:5000/blog", {
             method: "POST",
-            body: JSON.stringify(product),
+            body: JSON.stringify(blog),
             headers: {
                 "Content-Type": "application/json",
             },
@@ -15,7 +15,7 @@ const addBlog = (product) => {
             dispatch(
                 addNewBlog({
                     _id: result.insertedId,
-                    ...product,
+                    ...blog,
                 })
             );
         }
